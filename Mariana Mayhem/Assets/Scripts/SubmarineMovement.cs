@@ -18,6 +18,7 @@ public class SubmarineMovement : MonoBehaviour
     void Update()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
+        moveInput.y = Input.GetAxisRaw("Vertical");
 
         moveInput.Normalize();
 
